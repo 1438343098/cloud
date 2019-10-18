@@ -149,9 +149,9 @@
           
        }
        .iconlist:nth-child(1){
-           background-image:url(../static/chat_photographic_2.png);
+           background-image:url(../static/like.png);
            background-repeat:no-repeat;
-           background-size:cover;
+           background-size: 20px;
            
        }
 
@@ -181,8 +181,28 @@
         opacity:0;
     }
 
-    .my-say img, .other-say img {
-        margin-top: 10px;
-        width: 90%;
-        height: auto;
-    }
+/*.my-say img, .other-say img {
+    margin-top: 10px;
+    width: 90%;
+    height: auto;
+}
+
+.my-say .emoji, .other-say .emoji {
+    margin-top: 10px;
+    width: 20px;
+    height: auto;
+}
+
+.emojiList {
+    width: 90%;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}*/
+
+.my-say img, .other-say img {
+    margin-top: 10px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+}

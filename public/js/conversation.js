@@ -1,4 +1,4 @@
-var init = {
+﻿var init = {
     appid: "RANIkEKxsvi7IbmYzTkIL6MX-gzGzoHsz",
     appkey: "bL7eAMgiGdnK29nJ42jmCHhW",
     sendname: prompt("请输入你的姓名"),
@@ -110,6 +110,19 @@ document.getElementById('file').onchange = function (e) {
         return init.sendMessage(file, init.sendname, init.jsname, 2);
     }).then(function () {
         console.log('发送成功');
+    }).catch(console.error.bind(console));
+}
+
+// 发送表情
+document.getElementById('emojiContent').onclick = function (e) {
+    var urlName = e.target.getAttribute('src');
+    var httpUrl = location.href.substring(0, location.href.indexOf('conversation.html')) + urlName;
+    var file = new AV.File.withURL(urlName, httpUrl);
+
+    file.save().then(function () {
+        return init.sendMessage(file, init.sendname, init.jsname, 2);
+    }).then(function () {
+        console.log('发送成功表情');
     }).catch(console.error.bind(console));
 }
 //调用接收信息的方法
