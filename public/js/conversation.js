@@ -115,10 +115,8 @@ document.getElementById('file').onchange = function (e) {
 
 // 发送表情
 document.getElementById('emojiContent').onclick = function (e) {
-    var urlName = e.target.getAttribute('src');
-    var httpUrl = location.href.substring(0, location.href.indexOf('conversation.html')) + urlName;
-    var file = new AV.File.withURL(urlName, httpUrl);
-
+    var httpUrl = e.target.getAttribute('src');
+    var file = new AV.File.withURL('emoji' + parseInt(Math.random() * 99999) + 1, httpUrl);
     file.save().then(function () {
         return init.sendMessage(file, init.sendname, init.jsname, 2);
     }).then(function () {
