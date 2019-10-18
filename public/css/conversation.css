@@ -1,0 +1,182 @@
+﻿  body{
+            padding:0;
+            margin:0;
+            height:100%;
+            width:100%;
+            background-color:#f4f4f4;
+            font-size:62.5%;
+        }
+        header{
+            width:100%;
+            height:2.5rem;
+            background:#ffffff;
+            color:#01BAFE;
+            font-size:0.5rem;
+            line-height:2.5rem;
+        }
+
+       #yy{
+           display:block;
+           width:5.4rem;
+           height:2rem;
+           border:solid 1px #00BBFF;
+           border-radius:0.5rem;
+           text-align:center;
+           line-height:2rem !important;
+           position:absolute;
+           left:60%;
+           top:0.25rem;
+       }
+       #bg{
+           display:block;
+           height:1.5rem;
+           width:1.5rem;
+           position:absolute;
+           right:1rem;
+           top:0.5rem;
+           background-image:url(../static/nav_change-lawer.png);
+           background-repeat:no-repeat;
+           background-size:cover;
+       }
+       section{
+           margin-top:20px;
+           height:25rem;
+           overflow-y:scroll;
+       }
+       .other{
+           width:100%;
+           display:flex;
+           justify-content:flex-start;
+           margin-top:2rem;
+       }
+       .other-head{
+           width:3.125rem;
+           height:3.125rem;
+           border-radius:50%;
+           background-image:url(../static/system-message.png);
+           background-repeat:no-repeat;
+           background-size:cover;
+           margin-left:0.937rem;
+       }
+
+       .other-say{
+           max-width:60%;
+           min-width:50%;
+           min-height:3.125rem;
+           background-color:#ffffff;
+           border-radius:20px;
+           padding-left:20px;
+           line-height:3.125rem;
+           color:#444444;
+           font-size:1.25rem;
+           margin-left:20px;
+           word-wrap:break-word;
+           word-spacing:2px;
+           word-break:break-all;
+       }
+       .my{
+           width:100%;
+           margin-top:2rem;
+           display:flex;
+           justify-content:flex-end;
+       }
+
+       .my-head{
+           width:3.125rem;
+           height:3.125rem;
+           border-radius:50%;
+           background-image:url(../static/chat_profile.png);
+           background-repeat:no-repeat;
+           background-size:cover;
+           margin-right:20px;
+       }
+       .my-say{
+           max-width:60%;
+           min-width:50%;
+           min-height:3.125rem;
+           background-color:#01BAFE;
+           border-radius:20px;
+           padding-left:20px;
+           line-height:3.125rem;
+           color:#ffffff;
+           font-size:1.25rem;
+           margin-right:20px;
+           word-wrap:break-word;
+           word-spacing:2px;
+           word-break:break-all;
+       }
+
+       footer{
+           width:99%;
+       }
+
+       #send-text{
+           width:80%;
+           height:2.5rem;
+           border:solid 1px #AFAFB3;
+           outline:none;
+           margin-top:2rem;
+           border-radius:0.5rem 0 0 0.5rem;
+           margin-left:3px;
+           padding-left:6px;
+           outline:none;
+       }
+
+       #send{
+         width: 18%;
+         height: 2.68rem;
+         border: 0;
+         outline: none;
+         background-color: #01BAFE;
+         font-size: 1.2rem;
+         position: absolute;
+         margin-left: 10px;
+         margin-top: 2rem;
+         right:3px;
+         color:#ffffff;
+       }
+
+       #icon{
+           margin-top:30px;
+           width:100%;
+           display:flex;
+           justify-content:space-around;
+       }
+
+       .iconlist{
+           width:1.975rem;
+           height:1.5rem;
+          
+       }
+       .iconlist:nth-child(1){
+           background-image:url(../static/chat_photographic_2.png);
+           background-repeat:no-repeat;
+           background-size:cover;
+           
+       }
+
+         .iconlist:nth-child(2){
+           background-image:url(../static/chat_picture_2.png);
+           background-repeat:no-repeat;
+           background-size:cover;
+           
+       }
+
+           .iconlist:nth-child(3){
+           background-image:url(../static/chat_red-envelope_1.png);
+           background-repeat:no-repeat;
+           background-size:cover;
+           
+       }
+
+           .iconlist:nth-child(4){
+           background-image:url(../static/chat_photographic_2.png);
+           background-repeat:no-repeat;
+           background-size:cover;
+           
+       }
+       
+    #file{
+        width:1.975rem;
+        opacity:0;
+    }
