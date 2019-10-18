@@ -180,3 +180,9 @@
         width:1.975rem;
         opacity:0;
     }
+
+    .my-say img, .other-say img {
+        margin-top: 10px;
+        width: 90%;
+        height: auto;
+    }
